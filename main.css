@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+body{
+    background-color: black;
+}
+.cabecalho{
+    background-image:url(./img/header.jpg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    width: 1370px;
+    max-width: 100%;
+    padding: 30px;
+    margin: 0 auto;
+}
+.navegacao{
+    display: flex;
+    justify-content: space-between;
+}
+.treino{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 0 auto;
+    text-align: center;
+    background-image: linear-gradient(50deg,black,red);
+}
+
+.sacoPancada{
+background-image: url(./img/ali51.jpg);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+}
+.parceiro{
+background-image: url(./img/ali.jpg);
+background-position:top ;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+.aquecimento{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(100deg,black,red);
+    
+}
+.treino__t{
+    height: 400px;
+    width: 1370px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-image: url(./img/ali.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.treino_um,.treino_dois,.aquecimento_um{
+    background-color: rgba(255, 0, 0, 0.297);
+}
+.remov{
+    margin-left: 640px;
+    
+}
+.rm3{
+    display: flex;
+    margin-left: 1325px;
+}
+li{
+    list-style: none;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.resu1,.resu2,.resu3{
+    color: black;
+    text-align: center;
+    height: 300px;
+    padding-left: 10px;
+}
+input,button{
+    padding: 6px;
+    border: none;
+    text-align: center;
+    color: red;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
+button{
+    color: red;
+    background-image: linear-gradient(50deg, black,white);
+    font-weight: bold;
+    transition: 1s;
+}
+button:hover{
+    color: white;
+    background-image: linear-gradient(50deg, black,red);
+    border: 1px solid white;
+    box-shadow: 2px 2px 2px white;
+}
+p{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    transition: 1s;
+    cursor: pointer;
+}
+p:hover{
+    color: white;
+    text-decoration: overline;
+    text-decoration-color: red;
+}
+h1,h2{
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+a:hover{
+    text-decoration: overline;
+    text-decoration-color: red;
+    text-shadow: 2px 2px 2px black;
+}
+@media screen and (max-width: 600px) {
+    .treino{
+        display: grid;
+        grid-template-columns: 1fr  ;
+        margin: 0 auto;
+        text-align: center;
+        background-image: linear-gradient(50deg,black,red);
+    }
+    .treino__t{
+        height: 400px;
+        width: 600px;
+        max-width: 100%;
+        margin: 0 auto;
+        background-image: url(./img/ali.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+    .rm3,.rm2,.rm1{
+        
+        margin-left: 555px;
+    }
+    .aquecimento_um{
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        margin-right: 100px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .rm3,.rm2,.rm1{
+        
+        margin-left: 310px;
+    }
+    .rm3{
+        margin-left: 0;
+    }
+    .aquecimento_um{
+        text-align: center;
+        margin-right: 225px;
+    }
+    .navegacao{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    a{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px white;
+    }
+}
+@media screen and (max-width: 415px) {
+    .rm3,.rm2,.rm1{
+        
+        margin-left: 390px;
+    }
+    .aquecimento_um{
+        text-align: center;
+        margin-right: 225px;
+        width: 100%;
+        max-width: 420px;
+    }
+    .navegacao{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    a{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px white;
+    }
+}
+@media screen and (max-width: 395px) {
+    .rm3,.rm2,.rm1{
+        
+        margin-left: 360px;
+    }
+    .rm3{
+        margin-left: 370px;
+    }
+    .aquecimento_um{
+        text-align: center;
+        margin-right: 225px;
+        width: 100%;
+        max-width: 420px;
+    }
+    .navegacao{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        
+    }
+    a{
+        color: red;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+        text-shadow: 2px 2px 2px white;
+    }
+}
