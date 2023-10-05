@@ -8,12 +8,35 @@
 body{
     background-color: black;
 }
-.cabecalho{
-    background-image:url(./img/header.jpg);
+.treino__t{
+    background-image: url(./img/ali.jpeg);
     background-repeat: no-repeat;
-    background-position: left;
     background-size: cover;
-    width: 1370px;
+    height: 60vh;
+    
+}
+.rm3{
+    width: 100%;
+    max-width: 4vh;
+    margin: 0 auto;
+    margin-left: 220vh;
+}
+.teste{
+    
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.297);
+    padding: 4px;
+}
+
+
+.cabecalho{
+    background-image:url(./img/ring.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: -77vh;
+    background-size: cover;
+    width: 300vh;
     max-width: 100%;
     padding: 30px;
     margin: 0 auto;
@@ -35,6 +58,7 @@ background-image: url(./img/ali51.jpg);
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
+
 }
 .parceiro{
 background-image: url(./img/ali.jpg);
@@ -43,33 +67,16 @@ background-size: cover;
 background-repeat: no-repeat;
 
 }
-.aquecimento{
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(100deg,black,red);
-    
-}
-.treino__t{
-    height: 400px;
-    width: 1370px;
-    max-width: 100%;
-    margin: 0 auto;
-    background-image: url(./img/ali.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    
-}
-.treino_um,.treino_dois,.aquecimento_um{
+
+.treino_um,.treino_dois{
     background-color: rgba(255, 0, 0, 0.297);
+
 }
 .remov{
     margin-left: 640px;
     
 }
-.rm3{
-    display: flex;
-    margin-left: 1325px;
-}
+
 li{
     list-style: none;
     
@@ -103,7 +110,7 @@ button:hover{
     box-shadow: 2px 2px 2px white;
 }
 p{
-    color: red;
+    color: rgb(135, 188, 0);
     font-weight: bold;
     font-size: 20px;
     text-decoration: underline;
@@ -127,9 +134,9 @@ a{
 a:hover{
     text-decoration: overline;
     text-decoration-color: red;
-    text-shadow: 2px 2px 2px black;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 295px) and (max-width: 1000px) {
     .treino{
         display: grid;
         grid-template-columns: 1fr  ;
@@ -137,103 +144,27 @@ a:hover{
         text-align: center;
         background-image: linear-gradient(50deg,black,red);
     }
-    .treino__t{
-        height: 400px;
-        width: 600px;
-        max-width: 100%;
-        margin: 0 auto;
-        background-image: url(./img/ali.jpeg);
-        background-size: cover;
+    .rm2,.rm1,.rm3{
+        
+        margin-left: 93vw;
+    }
+    .navegacao{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    a{
+        color: rgb(0, 123, 145);
+    }
+    .cabecalho{
+        background-image:url(./img/ring.jpg);
         background-repeat: no-repeat;
-        
-    }
-    .rm3,.rm2,.rm1{
-        
-        margin-left: 555px;
-    }
-    .aquecimento_um{
-        text-align: center;
-        max-width: 600px;
-        width: 100%;
-        margin-right: 100px;
+        background-position: bottom;
+        background-position-y: -35vh;
+        background-size: cover;
+        width: 300vh;
+        max-width: 100%;
+        padding: 30px;
+        margin: 0 auto;
     }
 }
-@media screen and (max-width: 375px) {
-    .rm3,.rm2,.rm1{
-        
-        margin-left: 310px;
-    }
-    .rm3{
-        margin-left: 0;
-    }
-    .aquecimento_um{
-        text-align: center;
-        margin-right: 225px;
-    }
-    .navegacao{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-    }
-    a{
-        color: red;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 30px;
-        text-shadow: 2px 2px 2px white;
-    }
-}
-@media screen and (max-width: 415px) {
-    .rm3,.rm2,.rm1{
-        
-        margin-left: 390px;
-    }
-    .aquecimento_um{
-        text-align: center;
-        margin-right: 225px;
-        width: 100%;
-        max-width: 420px;
-    }
-    .navegacao{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-    }
-    a{
-        color: red;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 30px;
-        text-shadow: 2px 2px 2px white;
-    }
-}
-@media screen and (max-width: 395px) {
-    .rm3,.rm2,.rm1{
-        
-        margin-left: 360px;
-    }
-    .rm3{
-        margin-left: 370px;
-    }
-    .aquecimento_um{
-        text-align: center;
-        margin-right: 225px;
-        width: 100%;
-        max-width: 420px;
-    }
-    .navegacao{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        
-    }
-    a{
-        color: red;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 30px;
-        text-shadow: 2px 2px 2px white;
-    }
-}
+
