@@ -159,7 +159,7 @@ a:hover{
         background-image:url(./img/ring.jpg);
         background-repeat: no-repeat;
         background-position: bottom;
-        background-position-y: -35vh;
+        background-position-y: -15vh;
         background-size: cover;
         width: 300vh;
         max-width: 100%;
